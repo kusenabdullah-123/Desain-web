@@ -1,0 +1,10 @@
+body {
+  background-color: green;
+}
+body header {
+  height: 200px;
+  width: 100px;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

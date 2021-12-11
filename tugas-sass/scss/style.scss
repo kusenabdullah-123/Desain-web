@@ -1,0 +1,178 @@
+$Warna: rgb(14, 14, 219);
+$warnaMenu: rgb(55, 55, 223);
+$warnaPudar: rgb(227, 227, 240);
+$WarnaSection: rgb(42, 81, 139);
+$fontNormal: 16px;
+$ratio: 1.7;
+$widthContainer: 1278px;
+body {
+  background-color: rgb(245, 239, 239);
+  margin: 0px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  background-color: $Warna;
+  h1 {
+    margin-left: 20px;
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    align-items: center;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    li {
+      width: 30%;
+      height: 90%;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $warnaMenu;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    li:hover {
+      cursor: pointer;
+      background-color: rgb(89, 89, 204);
+    }
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  .judul-halaman {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: $fontNormal * 4;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: $fontNormal * $ratio;
+      text-transform: capitalize;
+      margin-top: 0px;
+    }
+  }
+}
+.container {
+  background-color: rgb(52, 52, 160);
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  width: $widthContainer;
+  section {
+    .header-artikel {
+      display: flex;
+      justify-content: center;
+      .judul-artikel {
+        h2 {
+          text-transform: capitalize;
+          text-align: center;
+          margin: 1px;
+          font-size: $fontNormal * 3;
+          font-weight: bold;
+        }
+        p {
+          font-size: $fontNormal;
+          margin: 5px;
+          color: $warnaPudar;
+        }
+      }
+    }
+    article.sub-judul {
+      h3 {
+        font-size: 11 * $ratio;
+      }
+      article.sub-sub-judul {
+        font-size: 9 * $ratio;
+      }
+    }
+    background-color: $WarnaSection;
+    padding: 10px;
+    width: calc($widthContainer * 70 / 100);
+    height: 400px;
+    color: white;
+  }
+  aside {
+    width: calc($widthContainer * 25 / 100);
+    color: white;
+    margin-left: 30px;
+    .judul-tambahan {
+      display: flex;
+      justify-content: center;
+    }
+    article {
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+footer {
+  height: 150px;
+  background-color: $warnaMenu;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: rgb(241, 234, 234);
+  .nama-perusahaan {
+    padding: 10px;
+    flex-basis: 40%;
+  }
+  .contact {
+    display: flex;
+
+    flex-basis: 20%;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .sosmed {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-top: 5px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .external-link {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    h2 {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    ul {
+      // margin-top: 5px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        // height: 50%;
+        width: 20%;
+        // text-align: center;
+        margin: 5px;
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

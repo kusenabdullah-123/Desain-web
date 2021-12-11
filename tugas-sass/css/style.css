@@ -1,0 +1,165 @@
+body {
+  background-color: #f5efef;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #0e0edb;
+}
+nav h1 {
+  margin-left: 20px;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  align-items: center;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  width: 30%;
+  height: 90%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3737df;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  cursor: pointer;
+  background-color: #5959cc;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header .judul-halaman {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+header .judul-halaman h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+header .judul-halaman p {
+  font-size: 27.2px;
+  text-transform: capitalize;
+  margin-top: 0px;
+}
+
+.container {
+  background-color: #3434a0;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  width: 1278px;
+}
+.container section {
+  background-color: #2a518b;
+  padding: 10px;
+  width: 894.6px;
+  height: 400px;
+  color: white;
+}
+.container section .header-artikel {
+  display: flex;
+  justify-content: center;
+}
+.container section .header-artikel .judul-artikel h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 1px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.container section .header-artikel .judul-artikel p {
+  font-size: 16px;
+  margin: 5px;
+  color: #e3e3f0;
+}
+.container section article.sub-judul h3 {
+  font-size: 18.7;
+}
+.container section article.sub-judul article.sub-sub-judul {
+  font-size: 15.3;
+}
+.container aside {
+  width: 319.5px;
+  color: white;
+  margin-left: 30px;
+}
+.container aside .judul-tambahan {
+  display: flex;
+  justify-content: center;
+}
+.container aside article p {
+  text-align: justify;
+}
+
+footer {
+  height: 150px;
+  background-color: #3737df;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: #f1eaea;
+}
+footer .nama-perusahaan {
+  padding: 10px;
+  flex-basis: 40%;
+}
+footer .contact {
+  display: flex;
+  flex-basis: 20%;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contact .sosmed {
+  display: flex;
+  flex-direction: column;
+}
+footer .contact .sosmed a {
+  margin-top: 5px;
+  color: white;
+  text-decoration: none;
+}
+footer .external-link {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+}
+footer .external-link h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+footer .external-link ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .external-link ul li {
+  width: 20%;
+  margin: 5px;
+}
+footer .external-link ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=style.css.map */
